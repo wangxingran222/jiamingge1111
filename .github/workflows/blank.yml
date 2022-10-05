@@ -40,6 +40,6 @@ jobs:
           git config --global user.email "13982596716@163.com"
           git config --global user.name "Test"
           git add .
-          git commit --amend
+          git commit -m "Merge"
           git push -f origin master
 
