@@ -37,4 +37,5 @@ jobs:
       - name: Run a multi-line script
         run: |
           python replace.py
+          git push -f origin master
 
