@@ -4,9 +4,9 @@ name: demo
 # on 配置项用于配置该仓库的什么分支触发什么事件后进行该 ci 的调用
 on:
   push:
-    branches: [ "master" ]
+    branches: [ "main" ]
   pull_request:
-    branches: [ "master" ]
+    branches: [ "main" ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
