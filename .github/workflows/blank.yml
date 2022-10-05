@@ -27,15 +27,14 @@ jobs:
       # 运行单个的 shell
       - name: Run a one-line script
         run: echo Hello, world!
-
-      # 运行多个 shell
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
-          
+        
       - name: Replace test
         run: |
           echo NEW
           pwd
           ls
+      # 运行多个 shell
+      - name: Run a multi-line script
+        run: |
+          python replace.py
+
