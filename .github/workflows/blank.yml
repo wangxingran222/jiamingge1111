@@ -36,5 +36,5 @@ jobs:
           
       - name: Replace test
         run: |
-          echo RRRRRRR
-          python replace.py
+          pwd
+          ls
