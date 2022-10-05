@@ -35,4 +35,6 @@ jobs:
           echo test, and deploy your project.
           
       - name: Replace test
-        run: python replace.py
+        run: |
+          echo RRRRRRR
+          python replace.py
