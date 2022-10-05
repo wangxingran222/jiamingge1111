@@ -3,12 +3,10 @@ name: demo
 
 # on 配置项用于配置该仓库的什么分支触发什么事件后进行该 ci 的调用
 on:
-  # master 分支 push 后触发
   push:
-    branches: [ master ]
-  # master 分支 pull_request 后触发
+    branches: [ "master" ]
   pull_request:
-    branches: [ master ]
+    branches: [ "master" ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
