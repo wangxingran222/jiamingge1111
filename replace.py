@@ -1,5 +1,5 @@
 import os
-
+from os.path import isfile
 path = '/home/runner/work/jiamingge1111/jiamingge1111'
 for file_name in os.listdir(path):
     if isfile(file_name):
