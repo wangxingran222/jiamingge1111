@@ -32,4 +32,4 @@ jobs:
           git config --global user.name "Test"
           git add .
           git commit -m "pytest label replace"
-          git push -f origin master
+          git push -f origin main
