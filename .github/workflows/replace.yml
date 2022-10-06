@@ -27,17 +27,11 @@ jobs:
         run: |
           git clone https://github.com/wangxingran222/jiamingge1111.git
           cd jiamingge1111
-          pwd
-          ls -a
           python tests/replace.py
           git config --global user.email "13982596716@163.com"
           git config --global user.name "Test"
           git add .
           [ -z "$(git diff --staged)" ] || git commit -m "Replace2"
-      - name: Replace test
-        run: |
-          pwd
-          ls -a
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
