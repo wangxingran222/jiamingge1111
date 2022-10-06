@@ -3,7 +3,7 @@
 import pytest
 
 
-@pytest.mark.22222
+@pytest.mark.R
 def test_send_http():
     pass  # perform some webtest test for your app
 
