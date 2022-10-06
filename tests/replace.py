@@ -18,4 +18,4 @@ def replace_label(path, old_label:str, new_label:str):
 
 if __name__ == "__main__":
     cur_dir = os.path.dirname(os.path.abspath(__file__))  #当前文件所在目录
-    replace_label(cur_dir,"@pytest.mark.RRRRRR","@pytest.mark.RRRRRR")
+    replace_label(cur_dir,"@pytest.mark.RRRRRR","@pytest.mark.11111")
