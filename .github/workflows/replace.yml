@@ -27,7 +27,7 @@ jobs:
         run: |
           git clone https://github.com/wangxingran222/jiamingge1111.git
           cd jiamingge1111
-          python replace.py
+          python tests/replace.py
           git config --global user.email "13982596716@163.com"
           git config --global user.name "Test"
           git add .
