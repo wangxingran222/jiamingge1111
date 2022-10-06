@@ -39,8 +39,7 @@ jobs:
           pwd
           ls -a
       - name: Push changes
-        working-directory: ./jiamingge1111
-        run: |
-          uses: ad-m/github-push-action@master
-          with:
-            github_token: ${{ secrets.GITHUB_TOKEN }}
+        uses: ad-m/github-push-action@master
+        with:
+          directory: ./jiamingge1111
+          github_token: ${{ secrets.GITHUB_TOKEN }}
