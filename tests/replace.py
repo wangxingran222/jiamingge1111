@@ -3,7 +3,7 @@ from os.path import isfile
 
 def replace_label(path, old_label:str, new_label:str):
     for file_name in os.listdir(path):
-        if isfile(os.path.join(path,file_name)):
+        if isfile(os.path.join(path,file_name))and ("replace.py"not in os.path.join(path,file_name)):
             with open(os.path.join(path,file_name),"r",encoding='utf-8')as f1,open(os.path.join(path,file_name+".bak"),"w",encoding='utf-8')as f2:
                 for line in f1:
                     if old_label in line:
@@ -16,4 +16,4 @@ def replace_label(path, old_label:str, new_label:str):
 
 if __name__ == "__main__":
     cur_dir = os.path.dirname(os.path.abspath(__file__))  #当前文件所在目录
-    replace_label(cur_dir,"@pytest.mark.22222","@pytest.mark.22222")
+    replace_label(cur_dir,"@pytest.mark.22222","@pytest.mark.3333")
