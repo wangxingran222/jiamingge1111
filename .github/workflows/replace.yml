@@ -15,23 +15,23 @@ on:
 jobs:
   if_merged:
     if: github.event.pull_request.merged == true
-  build: 
-    # 该操作跑在什么环境之下，支持 Ubuntu/Windows/macOS。
-    runs-on: ubuntu-latest
-    # step 标识一系列按续执行的最小工作单元
-    steps:
-      # 运行单个的 shell
-      - name: Run a one-line script
-        run: echo Replace taking!
-        
-      - name: Replace test
-        run: |
-          git clone https://github.com/wangxingran222/jiamingge1111.git
-          cd jiamingge1111
-          python replace.py
-          git config --global user.email "13982596716@163.com"
-          git config --global user.name "Test"
-          git add .
-          git commit -m "pytest label replace"
-          git push -f origin master
+    build: 
+      # 该操作跑在什么环境之下，支持 Ubuntu/Windows/macOS。
+      runs-on: ubuntu-latest
+      # step 标识一系列按续执行的最小工作单元
+      steps:
+        # 运行单个的 shell
+        - name: Run a one-line script
+          run: echo Replace taking!
+          
+        - name: Replace test
+          run: |
+            git clone https://github.com/wangxingran222/jiamingge1111.git
+            cd jiamingge1111
+            python replace.py
+            git config --global user.email "13982596716@163.com"
+            git config --global user.name "Test"
+            git add .
+            git commit -m "pytest label replace"
+            git push -f origin master
 
