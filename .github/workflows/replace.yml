@@ -33,7 +33,7 @@ jobs:
           git config --global user.email "13982596716@163.com"
           git config --global user.name "Test"
           git add .
-          git commit -m "Replace"
+          [ -z "$(git diff --staged)" ] || git commit -m "Replace2"
       - name: Replace test
         run: |
           pwd
