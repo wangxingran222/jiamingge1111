@@ -33,13 +33,14 @@ jobs:
           git config --global user.email "13982596716@163.com"
           git config --global user.name "Test"
           git add .
+          git commit -m "Replace"
       - name: Replace test
         run: |
           pwd
           ls -a
       - name: Push changes
+        working-directory: ./jiamingge1111
         run: |
-          cd jiamingge1111
           uses: ad-m/github-push-action@master
           with:
             github_token: ${{ secrets.GITHUB_TOKEN }}
